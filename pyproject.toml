@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "tidal-top7"
+version = "0.1.0"
+description = "Crear playlist en TIDAL con el Top 7 de una lista de artistas"
+authors = ["johnny <you@example.com>"]
+packages = [{ include = "tidal_top7", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tidalapi = "^0.8"
+python-dotenv = "^1.0"
+
+[tool.poetry.scripts]
+tidal-top7 = "tidal_top7.main:cli"
